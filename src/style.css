@@ -24,19 +24,6 @@ html, body {
     text-shadow: 1px 1px rgba(0,0,0,0.1);
 }
 
-:root {
-    --color-bg1: rgb(108, 0, 162);
-    --color-bg2: rgb(0, 17, 82);
-    --color1: 18, 113, 255;
-    --color2: 221, 74, 255;
-    --color3: 100, 220, 255;
-    --color4: 200, 50, 50;
-    --color5: 180, 180, 50;
-    --color-interactive: 140, 100, 255;
-    --circle-size: 80%;
-    --blending: hard-light;
-}
-
 @keyframes moveInCircle {
     0% {
         transform: rotate(0deg);
@@ -88,26 +75,26 @@ html, body {
     gap: 20px;
     .chat-message{
         animation: moveVertical 0.8s;
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        .chat-info{
-            display: flex;
-            p{
-                margin: 0;
-            }
-            flex-direction: column;
-            .username{
-                font-family: "Montserrat";
-                font-weight: 600;
-            }
-            .message{
-                padding: 15px;
-                font-family: "Montserrat";
-                font-weight: 500;
                 border-radius: 10px;
                 background: #FAFAFA;
                 backdrop-filter: blur(20px);
+                padding: 15px;
+
+
+        width: fit-content;
+        .chat-info{
+            gap: 5px;
+            display: flex;
+            p{
+                margin: 0;
+                font-family: "Montserrat";
+            }
+            flex-direction: column;
+            .username{
+                font-weight: 600;
+            }
+            .message{
+                font-weight: 500;
             }
         }
         img{
