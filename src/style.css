@@ -63,9 +63,8 @@ html, body {
 
 #chat-box {
     box-sizing: border-box;
-    padding: 40px;
     width: 400px;
-    height: 1200px;
+    height: 616px;
     position: relative;
     overflow: hidden;
     top: 0;
